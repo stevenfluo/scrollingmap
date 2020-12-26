@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Stanford Maps</title>
+<script src="map.js" defer></script>
+<style>
+
+    #mapandbuttons {
+        display: flex;
+        position: absolute;
+        margin: 25px;
+    }
+
+    #mapframe {
+        border: 20px solid gray;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    #map {
+        position: absolute;
+    }
+
+    #buttons {
+        position: absolute;
+        margin-left: 25px;
+        margin-right: 25px;
+        right: 0px;
+    }
+
+    button {
+        margin: 3px;
+    }
+
+    #zoomin {
+        width: 30px;
+    }
+
+    #zoomout {
+        width: 30px;
+    }
+
+    #buttontable {
+        width: 60px;
+    }
+
+    #buttonrow1 {
+        right: 0px;
+    }
+</style>
+</head>
+
+<body>
+    <div id="mapandbuttons">
+        <div id="mapframe">
+            <img id="map" src="map-s.gif" alt="stanford map" />
+        </div>
+
+        <div id="buttons">
+            <table id="buttontable">
+                <tr id="buttonrow1">
+                    <td></td>
+                    <td colspan="2"><button id="zoomin">+</button></td>
+                    <td colspan="2"><button id="zoomout">-</button></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><button id="up">^</button></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button id="left">&lt;</button></td>
+                    <td></td>
+                    <td><button id="right">&gt;</button></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><button id="down">v</button></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
